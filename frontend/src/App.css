@@ -1,34 +1,181 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Tesseract CRM Landing Page Styles */
+
+/* Base Reset */
+.App {
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+/* Selection styling */
+::selection {
+    background-color: rgba(255, 87, 34, 0.3);
+    color: #fff;
+}
+
+/* Focus styles */
+:focus-visible {
+    outline: 2px solid #FF5722;
+    outline-offset: 2px;
+}
+
+/* Smooth animations for all transitions */
+* {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Image handling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button base styles */
+button {
+    cursor: pointer;
+}
+
+/* Link base styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Iframe styling */
+iframe {
+    display: block;
+}
+
+/* Hide scrollbar but keep functionality */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Parallax effect base */
+.parallax {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
 }
 
-.App-link {
-    color: #61dafb;
+/* Glow animation */
+@keyframes glow-pulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
 }
 
-@keyframes App-logo-spin {
+.animate-glow {
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* Rotate animation for decorative elements */
+@keyframes slow-rotate {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+.animate-slow-rotate {
+    animation: slow-rotate 30s linear infinite;
+}
+
+/* Bento grid hover effects */
+.bento-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-item:hover {
+    transform: translateY(-8px);
+}
+
+/* Glass morphism enhanced */
+.glass-enhanced {
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom gradient borders */
+.gradient-border {
+    position: relative;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #FF5722, #7C3AED);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Text clip for gradients */
+.text-clip {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .glass-card {
+        backdrop-filter: blur(12px);
+    }
+    
+    .noise-overlay {
+        display: none;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    .noise-overlay,
+    nav {
+        display: none;
     }
 }
