@@ -1,0 +1,134 @@
+{
+  "identity": {
+    "name": "Tesseract CRM",
+    "archetype": "Electric & Neon (Archetype 7) + Jewel Fusion",
+    "vibe": "Futuristic, Efficient, Automated, High-Velocity",
+    "logo_assets": [
+      "https://customer-assets.emergentagent.com/job_ai-business-boost-11/artifacts/z6mxilkl_350x180%20px%20logo.png",
+      "https://customer-assets.emergentagent.com/job_ai-business-boost-11/artifacts/sox7i23x_Dikdorgen%20ana%20logo.png",
+      "https://customer-assets.emergentagent.com/job_ai-business-boost-11/artifacts/z5nx8sb0_Dikey%20istiflenmi%C5%9F.png"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["500", "700", "900"],
+      "usage": "Use for all H1-H6. Tracking tight (-0.02em).",
+      "import_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Use for paragraphs, labels, inputs."
+    }
+  },
+  "colors": {
+    "palette_strategy": "Void Black Base + Brand Orange Action + Electric Purple Glow",
+    "css_variables": {
+      "root": {
+        "--background": "0 0% 100%",
+        "--foreground": "222.2 84% 4.9%",
+        "--card": "0 0% 100%",
+        "--card-foreground": "222.2 84% 4.9%",
+        "--popover": "0 0% 100%",
+        "--popover-foreground": "222.2 84% 4.9%",
+        "--primary": "14 100% 57%",
+        "--primary-foreground": "210 40% 98%",
+        "--secondary": "262 83% 58%",
+        "--secondary-foreground": "210 40% 98%",
+        "--muted": "210 40% 96.1%",
+        "--muted-foreground": "215.4 16.3% 46.9%",
+        "--accent": "262 83% 58%",
+        "--accent-foreground": "222.2 47.4% 11.2%",
+        "--destructive": "0 84.2% 60.2%",
+        "--destructive-foreground": "210 40% 98%",
+        "--border": "214.3 31.8% 91.4%",
+        "--input": "214.3 31.8% 91.4%",
+        "--ring": "14 100% 57%",
+        "--radius": "0.75rem"
+      },
+      "dark": {
+        "--background": "240 10% 3.9%",
+        "--foreground": "210 40% 98%",
+        "--card": "240 10% 3.9%",
+        "--card-foreground": "210 40% 98%",
+        "--popover": "240 10% 3.9%",
+        "--popover-foreground": "210 40% 98%",
+        "--primary": "14 100% 57%",
+        "--primary-foreground": "210 40% 98%",
+        "--secondary": "262 83% 58%",
+        "--secondary-foreground": "210 40% 98%",
+        "--muted": "217.2 32.6% 17.5%",
+        "--muted-foreground": "215 20.2% 65.1%",
+        "--accent": "262 83% 58%",
+        "--accent-foreground": "210 40% 98%",
+        "--destructive": "0 62.8% 30.6%",
+        "--destructive-foreground": "210 40% 98%",
+        "--border": "217.2 32.6% 17.5%",
+        "--input": "217.2 32.6% 17.5%",
+        "--ring": "14 100% 57%"
+      }
+    },
+    "usage_rules": [
+      "Background must be ALMOST black (#0A0A0A), never pure black.",
+      "Primary Color (Orange #FF5722) is for CTAs and Key Highlights ONLY.",
+      "Secondary Color (Purple #7C3AED) is for ambient glows, glass borders, and decorative elements.",
+      "Glassmorphism: Use bg-white/5 or bg-black/40 with backdrop-blur-xl and border-white/10."
+    ]
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": "Generous. Use py-24 or py-32 for section spacing.",
+    "grid_system": "Bento Grid (Mode A) for Services and Features.",
+    "hero_section": {
+      "style": "Split Screen Asymmetric",
+      "left": "Typography + CTA (60%)",
+      "right": "3D/Glass Visual (40%)",
+      "background": "Radial gradient glow (Purple/Orange) behind the glass card."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary hover:bg-primary/90 text-white rounded-full shadow-[0_0_20px_rgba(255,87,34,0.5)] transition-all hover:scale-105",
+      "secondary": "bg-transparent border border-white/20 hover:bg-white/10 text-white rounded-full backdrop-blur-md"
+    },
+    "cards": {
+      "style": "Glassmorphism",
+      "classes": "bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl hover:border-primary/50 transition-colors duration-300"
+    },
+    "form_container": {
+      "style": "The Cockpit",
+      "classes": "bg-black/60 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden"
+    }
+  },
+  "visual_enhancers": {
+    "gradients": "Use 'bg-gradient-to-r from-orange-500 to-purple-600' for text clips (bg-clip-text).",
+    "textures": "Add a fixed 'noise' overlay div with opacity-5 pointer-events-none z-50.",
+    "glows": "Use absolute positioned divs with blur-3xl and opacity-30 behind key elements."
+  },
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1764937324743-e4eb733f8821?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "service_voice_agent": "https://images.unsplash.com/photo-1578918748648-7d30d67436c2?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "service_saas": "https://images.unsplash.com/photo-1665846183635-a2ae8d5f9af1?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "service_content": "https://images.unsplash.com/photo-1697564264677-a90b9c1ddbcb?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "abstract_network": "https://images.unsplash.com/photo-1762716514229-739f6769e282?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "instructions_to_main_agent": [
+    "1. UPDATE CSS VARIABLES: Replace the content of 'src/index.css' with the variables provided in 'colors.css_variables'.",
+    "2. INSTALL FONTS: Add the Google Fonts import to 'src/index.css' or 'public/index.html'.",
+    "3. CREATE COMPONENTS: Build 'GlassCard', 'GlowingButton', 'SectionHeader' as reusable components.",
+    "4. GHL WIDGET: Embed the form widget inside a 'GlassCard' container. Use an iframe with width='100%' and height='600px' (adjust as needed). URL: https://link.tesseractcrm.com/widget/form/iFOzCNyLBErzA4PTRZld",
+    "5. BOOKING LINK: The 'Book Audit' button must open: https://link.tesseractcrm.com/widget/booking/VuCHnV26sXlp8qy9DiVG",
+    "6. LANGUAGE TOGGLE: Implement a simple state (TR/EN) that switches text content. Default to TR.",
+    "7. ANIMATIONS: Use 'framer-motion' for scroll reveals. All sections should fade-in-up.",
+    "8. DARK MODE: Force dark mode by adding 'dark' class to the html/body tag or ensuring the theme provider defaults to dark."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts. Use asymmetry.",
+    "Use 2-3x more spacing than typical designs.",
+    "Every interaction needs micro-animations.",
+    "All interactive elements MUST include data-testid attributes.",
+    "Use 'sonner' for toasts.",
+    "Never use pure black (#000000) for backgrounds, use #050505 or #0A0A0A."
+  ]
+}
