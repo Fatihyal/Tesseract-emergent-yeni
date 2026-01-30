@@ -29,6 +29,62 @@
             data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js" 
             data-widget-id="687295f580e5cb7844e14855">
         </script>
+        
+        <!-- Chat Widget Theme Customization -->
+        <style>
+            /* GHL Chat Widget Custom Theme - Tesseract CRM */
+            :root {
+                --ghl-primary: #FF5722;
+                --ghl-secondary: #7C3AED;
+            }
+            
+            /* Chat bubble/launcher button */
+            .lc_text-widget-btn,
+            [class*="chat-bubble"],
+            [class*="widget-bubble"],
+            .chat-widget-open-btn {
+                background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%) !important;
+                box-shadow: 0 4px 24px rgba(255, 87, 34, 0.5) !important;
+            }
+            
+            /* Chat window styling */
+            .lc_text-widget,
+            [class*="chat-window"],
+            .chat-widget-container {
+                border-radius: 20px !important;
+                box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4), 0 0 60px rgba(255, 87, 34, 0.2) !important;
+                border: 1px solid rgba(255, 87, 34, 0.3) !important;
+            }
+            
+            /* Header */
+            .lc_text-widget-header,
+            [class*="chat-header"] {
+                background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%) !important;
+                border-bottom: 1px solid rgba(255, 87, 34, 0.3) !important;
+            }
+            
+            /* Input area */
+            .lc_text-widget-footer,
+            [class*="chat-footer"],
+            [class*="input-area"] {
+                background: #0a0a0a !important;
+                border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+            }
+            
+            /* Send button */
+            .lc_text-widget-send-btn,
+            [class*="send-btn"],
+            button[type="submit"] {
+                background: #FF5722 !important;
+                color: white !important;
+            }
+            
+            /* Bot avatar styling */
+            .lc_text-widget-avatar,
+            [class*="bot-avatar"] {
+                border: 2px solid #FF5722 !important;
+            }
+        </style>
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
         These two scripts have been added for the Visual Edits, please do not edit or remove them
