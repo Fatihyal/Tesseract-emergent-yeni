@@ -190,3 +190,67 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom-color: inherit;
     }
 }
+
+/* Print styles */
+@media print {
+    .noise-overlay,
+    nav {
+        display: none;
+    }
+}
+
+/* GHL Chat Widget Customization */
+/* Override chat widget colors to match site theme */
+:root {
+    --lc-primary-color: #FF5722 !important;
+    --lc-primary-hover: #E64A19 !important;
+}
+
+/* Chat widget button styling */
+.lc_text-widget-open,
+[class*="chat-widget"],
+[class*="lc-"] {
+    --primary-color: #FF5722 !important;
+}
+
+/* Target the chat bubble/button */
+div[style*="position: fixed"][style*="bottom"] > div,
+.chat-widget-container,
+#chat-widget,
+[data-widget-id] {
+    z-index: 9998 !important;
+}
+
+/* Style overrides for GHL widget elements */
+iframe[src*="leadconnectorhq"] {
+    border-radius: 16px !important;
+    box-shadow: 0 0 40px rgba(255, 87, 34, 0.3) !important;
+}
+
+/* Chat launcher button - try to style it */
+.lc-chat-widget-launcher,
+.chat-launcher,
+[class*="launcher"] {
+    background: linear-gradient(135deg, #FF5722, #7C3AED) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 20px rgba(255, 87, 34, 0.5) !important;
+}
+
+/* Chat window header */
+.lc-chat-header,
+[class*="chat-header"] {
+    background: linear-gradient(135deg, #FF5722, #7C3AED) !important;
+}
+
+/* Send button */
+.lc-send-button,
+[class*="send-button"] {
+    background-color: #FF5722 !important;
+}
+
+/* Message bubbles - agent messages */
+.lc-agent-message,
+[class*="agent-message"] {
+    background-color: rgba(124, 58, 237, 0.2) !important;
+    border: 1px solid rgba(124, 58, 237, 0.3) !important;
+}
