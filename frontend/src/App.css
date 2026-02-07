@@ -179,3 +179,23 @@ iframe {
         display: none;
     }
 }
+
+
+
+@media print {
+    .noise-overlay,
+    nav {
+        display: none;
+    }
+}
+
+/* Hide "Made with emergent" branding */
+.made-with-emergent,
+.emergent-attribution,
+footer .emergent-brand,
+footer a[href*="emergent"],
+.bottom-right,
+.badge-emergent {
+  display: none !important;
+}
+
